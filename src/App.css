@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+/* @import url(./webfonts.css); */
+
+/*************************************
+  컴포넌트
+************************************/
+
+[class^="btn-style"] {
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  transition: all 0.3s;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-style1 {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.btn-style2 {
+  background: #032022;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*************************************
+  공통 레이아웃
+************************************/
+
+.content {
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+  height: 100vh;
+  width: 1680px;
+  margin: 0 auto;
+}
+
+aside {
+  position: relative;
+  margin-top: 25px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+main {
+  flex: 1;
+  border-radius: 20px;
+  background: #f3f9f7;
+  padding: 25px;
+  overflow: hidden;
+}
+
+/*************************************
+  aside
+************************************/
+
+aside .logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+aside nav {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #ffffff2b;
+}
+
+aside nav li {
+  &:not(:first-child) {
+    margin-top: 13px;
+  }
+  &.active a {
+    background: #154346;
+  }
+  &:hover a {
+    background: #154346;
+  }
+  a {
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+
+    span {
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+  .icon {
+    background: #2c5557;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+
+    i {
+      color: #fff;
+      font-size: 22px;
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+aside .aside-bottom {
+  position: absolute;
+  bottom: 0;
+  .logout {
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+/*************************************
+  main
+************************************/
+main .head-area .heading1 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #021f21;
+}
+
+main .head-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 38px;
+}
+
+main .main-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  height: calc(100% - 58px);
+}
+
+main .main-area .box-wrap {
+  display: flex;
+  gap: 20px;
+
+  .box {
+    flex: 1;
+  }
+}
+
+main .main-area .box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  background: #fff;
+  border-radius: 13px;
+  padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+main .main-area .box .box-tit {
+  font-weight: 600;
+  color: #393939;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main .main-area .box.box1 {
+  background: #0c575c6b;
+  color: #fff;
+}
+
+.graph {
+  border: 1px solid #d1d1d1;
+  height: 200px;
 }

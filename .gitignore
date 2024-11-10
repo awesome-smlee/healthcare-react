@@ -21,3 +21,28 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# macOS 특수 파일들
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 아이콘 생성 파일 (아이콘 정보 파일)
+Icon?
+
+# 맥에서 생성되는 Thumbs.db와 유사한 파일
+._*
+
+# Spotlight 파일
+.Spotlight-V100
+.Trashes
+
+# macOS에서 사용할 수 있는 설정 파일
+*.swp
+
+# VS Code 파일
+.vscode/
+
+# Windows 파일
+Thumbs.db
+desktop.ini
