@@ -1,6 +1,18 @@
+import API from "_utils/API";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Main() {
+  // useEffect(()=> {
+  //   API.get("http://localhost:8082/api/test")
+  //   .then((res) => {
+  //     console.log(res);
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   })
+  // },[]);
+
   return (
     <>
       <main>

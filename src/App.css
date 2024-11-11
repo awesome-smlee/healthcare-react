@@ -31,14 +31,14 @@
   padding: 25px;
   gap: 25px;
   height: 100vh;
-  width: 1680px;
-  margin: 0 auto;
+  /* width: 1680px; */
+  /* margin: 0 auto; */
 }
 
 aside {
   position: relative;
   margin-top: 25px;
-  width: 250px;
+  width: 190px;
   flex-shrink: 0;
 }
 
@@ -86,14 +86,14 @@ aside nav li {
     span {
       display: block;
       color: #fff;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
   .icon {
     background: #2c5557;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@ aside nav li {
 
     i {
       color: #fff;
-      font-size: 22px;
+      font-size: 1rem;
     }
   }
 }
@@ -120,7 +120,7 @@ aside .aside-bottom {
 ************************************/
 main .head-area .heading1 {
   display: inline-block;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   color: #021f21;
 }
@@ -155,19 +155,19 @@ main .main-area .box {
   gap: 10px;
   background: #fff;
   border-radius: 13px;
-  padding: 25px;
+  padding: 15px;
+
+  .box-tit {
+    font-weight: 600;
+    color: #393939;
+  }
 }
 
-main .main-area .box .box-tit {
-  font-weight: 600;
-  color: #393939;
-}
-
+/* 오늘의 주요 건강 지표 */
 main .main-area .box.box1 {
-  background: #0c575c6b;
-  color: #fff;
 }
 
+/* 그래프 영역 */
 .graph {
   border: 1px solid #d1d1d1;
   height: 200px;
