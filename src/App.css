@@ -172,3 +172,42 @@ main .main-area .box.box1 {
   border: 1px solid #d1d1d1;
   height: 200px;
 }
+
+/*************************************
+  login
+************************************/
+.login-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.login-area h2,
+.login-area label,
+.login-area button {
+  color: #fff;
+}
+
+.login-area form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-area input {
+  color: #000;
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin-top: 5px;
+  padding: 0 15px;
+}
+
+.login-area button {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
